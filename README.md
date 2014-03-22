@@ -2,6 +2,27 @@
 
 A Ruby library to access Bukkit server over JSONAPI plugin.
 
+## Installation
+
+### Bundler:
+
+Write your Gemfile:
+
+```text
+gem 'jsonapi', :git => 'git://github.com/k5342/jsonapi.rb.git'
+```
+
+```shell
+bundle install
+```
+
+### Gem (specific_install):
+
+```shell
+gem install specific_install
+gem specific_install -l git://github.com/k5342/jsonapi.rb.git
+```
+
 ## Usage
 
 ```ruby
@@ -22,7 +43,7 @@ puts client.standard('getBukkitVersion', [])
 puts client.standard('getBukkitVersion')
 ```
 
-If successfully, you can see this results:
+Output:
 
 ```json
 {"result":"success","source":"kickPlayer","success":null}
